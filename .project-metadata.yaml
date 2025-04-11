@@ -9,8 +9,8 @@ date: "2023-04-22"
 
 runtimes:
   - editor: PBJ Workbench
-    kernel: Python 3.9
-    edition: Nvidia GPU
+    kernel: Python 3.10
+    edition: Standard
 
 tasks:
 
