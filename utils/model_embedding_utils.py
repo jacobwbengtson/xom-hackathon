@@ -1,9 +1,7 @@
-
-
-
 from openai import OpenAI
 import json
 import tiktoken
+import os
 
 
 def _handle_caii_request(sentence: str):
