@@ -11,19 +11,19 @@ environment_variables:
   EMBEDDING_MODEL_ID:
     default: "embedding_model_id"
     description: >-
-      Get the MODEL_ID from Cloduera AI > Model Endpoints > model of interest > Model Endpoint Details
+      Get the MODEL_ID from Cloduera AI, Model Endpoints, model of interest, Model Endpoint Details
   EMBEDDING_MODEL_ENDPOINT:
     default: "embedding_model_endpoint"
     description: >-
-      Get the EMBEDDING_MODEL_ENDPOINT from Cloudera AI > Model Endpoints > model of interest > URL under the model name
+      Get the EMBEDDING_MODEL_ENDPOINT from Cloudera AI, Model Endpoints, model of interest, URL under the model name
   LLM_MODEL_ID:
     default: "llm_model_id"
     description: >-
-      Get the LLM_MODEL_ID from Cloduera AI > Model Endpoints > model of interest > Model Endpoint Details
+      Get the LLM_MODEL_ID from Cloduera AI, Model Endpoints, model of interest, Model Endpoint Details
   LLM_MODEL_ENDPOINT:
     default: "llm_model_endpoint"
     description: >-
-      Get the LLM_MODEL_ENDPOINT from Cloudera AI > Model Endpoints > model of interest > URL under the model name
+      Get the LLM_MODEL_ENDPOINT from Cloudera AI, Model Endpoints, model of interest, URL under the model name
 
 runtimes:
   - editor: PBJ Workbench
