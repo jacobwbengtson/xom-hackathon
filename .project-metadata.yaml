@@ -2,10 +2,28 @@ name: LLM Chatbot Augmented with Enterprise Data
 description: |
   This AMP demonstrates how to use an open source pre-trained instruction-following LLM (Large Language Model) to build a ChatBot-like web application. The responses of the LLM are enhanced by giving it context from an internal knowledge base. This context is retrieved by using an open source Vector Database to do semantic search.
 
-author: Cloudera Inc.
+author: Jake
 specification_version: 1.0
 prototype_version: 1.0
-date: "2023-04-22"
+date: "2025-04-13"
+
+environment_variables:
+  EMBEDDING_MODEL_ID:
+    default: "embedding_model_id"
+    description: >-
+      Get the MODEL_ID from Cloduera AI -> Model Endpoints -> [model of interest] -> Model Endpoint Details
+  EMBEDDING_MODEL_ENDPOINT:
+    default: "embedding_model_endpoint"
+    description: >-
+      Get the EMBEDDING_MODEL_ENDPOINT from Cloudera AI -> Model Endpoints -> [model of interest] -> URL under the model name
+  LLM_MODEL_ID:
+    default: "llm_model_id"
+    description: >-
+      Get the LLM_MODEL_ID from Cloduera AI -> Model Endpoints -> [model of interest] -> Model Endpoint Details
+  LLM_MODEL_ENDPOINT:
+    default: "llm_model_endpoint"
+    description: >-
+      Get the LLM_MODEL_ENDPOINT from Cloudera AI -> Model Endpoints -> [model of interest] -> URL under the model name
 
 runtimes:
   - editor: PBJ Workbench
