@@ -9,10 +9,10 @@ import json
 def _handle_caii_request(prompt: str):
   # If running from workbench use /tmp/jwt. Otherwise provide your CDP_TOKEN
   API_KEY = json.load(open("/tmp/jwt"))["access_token"]
-  MODEL_ID = "meta/llama-3.1-8b-instruct"
+  MODEL_ID = os.environ.get("LLM_MODEL_ID")
 
   client = OpenAI(
-    base_url="https://ml-2dad9e26-62f.go01-dem.ylcu-atmi.cloudera.site/namespaces/serving-default/endpoints/goes---llama3-8b-throughput/v1",
+    base_url=os.environ.get("LLM_MODEL_ENDPOINT"),
     api_key=API_KEY,
   )
 
